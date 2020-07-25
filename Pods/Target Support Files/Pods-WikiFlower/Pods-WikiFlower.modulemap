@@ -1,0 +1,6 @@
+framework module Pods_WikiFlower {
+  umbrella header "Pods-WikiFlower-umbrella.h"
+
+  export *
+  module * { export * }
+}

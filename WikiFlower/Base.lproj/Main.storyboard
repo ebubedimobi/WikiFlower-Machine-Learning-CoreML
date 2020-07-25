@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dPN-wO-TfI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--🌺 WikiFlower-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WikiFlower" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Me Any Flower" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yfa-eA-TrV">
+                                <rect key="frame" x="93" y="106" width="228" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dsb-En-9Rk">
+                                <rect key="frame" x="20" y="552" width="362" height="310"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ec4-uu-5eo">
+                                <rect key="frame" x="20" y="157" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ec4-uu-5eo" secondAttribute="height" multiplier="1:1" id="JfX-cU-RSu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hlt-DH-oq1">
+                                <rect key="frame" x="207" y="552" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dsb-En-9Rk" secondAttribute="trailing" constant="32" id="3pJ-yg-5hL"/>
+                            <constraint firstItem="yfa-eA-TrV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Of-fD-gxa"/>
+                            <constraint firstItem="yfa-eA-TrV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="BiY-1v-gze"/>
+                            <constraint firstItem="Ec4-uu-5eo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FrL-Zr-Apf"/>
+                            <constraint firstItem="Hlt-DH-oq1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P88-9I-OQL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ec4-uu-5eo" secondAttribute="trailing" constant="19" id="Vvn-8d-70E"/>
+                            <constraint firstItem="Dsb-En-9Rk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bzu-bt-MhE"/>
+                            <constraint firstItem="Dsb-En-9Rk" firstAttribute="top" secondItem="Hlt-DH-oq1" secondAttribute="bottom" id="jnm-Me-Uzo"/>
+                            <constraint firstItem="Hlt-DH-oq1" firstAttribute="top" secondItem="Ec4-uu-5eo" secondAttribute="bottom" constant="20" id="sxu-rx-CXB"/>
+                            <constraint firstItem="Ec4-uu-5eo" firstAttribute="top" secondItem="yfa-eA-TrV" secondAttribute="bottom" constant="23" id="v3K-XU-bQI"/>
+                            <constraint firstItem="Dsb-En-9Rk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xZM-jC-rM9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="🌺 WikiFlower" id="Jvy-qJ-Mkp">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="TO0-du-rQ8">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="BYZ-38-t0r" id="jqP-s9-Rwa"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="f40-op-Sjo">
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="BYZ-38-t0r" id="5ND-Ly-lcJ"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="flowerDescriptionLabel" destination="Dsb-En-9Rk" id="rRs-w6-DYr"/>
+                        <outlet property="flowerNameLabel" destination="yfa-eA-TrV" id="J6i-lC-oVk"/>
+                        <outlet property="imageView" destination="Ec4-uu-5eo" id="359-GN-2R3"/>
+                        <outlet property="imageview" destination="Ec4-uu-5eo" id="G5v-gx-gWd"/>
+                        <outlet property="otherFlowerNameLabel" destination="Hlt-DH-oq1" id="c7V-8o-81A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gxN-gc-AOB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dPN-wO-TfI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ik3-Ic-4XF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="W8t-fV-lHe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbQ-UZ-RxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
