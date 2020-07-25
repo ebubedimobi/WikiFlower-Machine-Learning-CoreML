@@ -4,6 +4,21 @@ A flower-recognition app on iOS using Machine Learning caffemodel from oxford na
 
 Does not contain CoreML Model file as it is too large
 
+# Technologies used
+- Xcode
+- Swift
+- CoreML
+- Vision
+- Networking
+- JSON Parsing
+- JSON Decoding
+- Alamofire
+- Storyboards and progmattic UI
+- UIKit
+- AutoLayout
+- UIImagePickerController
+- Cocoapods
+
 # Screenshots
 
 ![](Documentation/iphone11_1.png)
